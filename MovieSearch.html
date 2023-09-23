@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Search Engine</title>
+    <link rel="stylesheet" href="MovieSearch.css">
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+<script src="https://kit.fontawesome.com/a210127c35.js" crossorigin="anonymous"></script>
+
+
+</head>
+<body>
+        <header>
+            <nav>
+                <ul>
+                    <li id="home">Home</li>
+                    <li>Movies</li>
+                    <li>Anime</li>
+                    <li>Series</li>
+                    <li>About</li>
+                    <li>Contact</li>
+                </ul>
+            </nav>
+        </header>
+    <div id="div" style="text-align: center;">
+    <input type="search" placeholder="Enter Movie Name" id="search">
+    <button onclick="searchmovies()" id="button"> <i class="fa-solid fa-magnifying-glass"> </i></button>
+    </div>
+<div id="product-wrapper">
+    <!-- <div class="movies" style="border: 1px solid black;">
+        <img src="https://m.media-amazon.com/images/M/MV5BODUwNDNjYzctODUxNy00ZTA2LWIyYTEtMDc5Y2E5ZjBmNTMzXkEyXkFqcGdeQXVyODE5NzE3OTE@._V1_SX300.jpg" alt="">
+        <p style="padding: 0%; margin: 2px;"><b>Title:</b>"RRR"</p>
+        <p style="padding: 0%; margin: 2px;"><b>Year:</b>2022</p>
+    </div> -->
+    <div id="error">
+        <h1 id="failed">
+            <!-- <h1>4<span><i class="fas fa-ghost"></i></span>4</h1>
+            <h2>Error: 404 page not found</h2>
+            <p>Sorry, the page you're looking for cannot be accessed</p> -->
+        </h1>
+    </div >
+</div>
+<p id="status"></p>
+<script src="MovieSearch.js"></script>
+</body>
+</html>
